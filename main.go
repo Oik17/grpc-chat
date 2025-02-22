@@ -20,7 +20,6 @@ func main() {
 	pool := &handler.Pool{
 		Connection: []*handler.Connection{},
 	}
-	
 
 	// Register the pool with the gRPC server
 	proto.RegisterBroadcastServer(grpcServer, pool)
